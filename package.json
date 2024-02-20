@@ -1,5 +1,7 @@
 {
-  "main": "./backend/index.cjs",
+  "scripts": {
+    "start": "node ./backend/index.cjs"
+  },
   "dependencies": {
     "create-vite": "^5.2.0"
   }
