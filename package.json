@@ -1,10 +1,11 @@
 {
 "scripts": {
-  "start": "node ./backend/index.cjs",
-  "start:frontend": "vite",
-  "start:both": "concurrently \"npm start\" \"npm run start:frontend\""
-}
-,
+  "start": "concurrently \"node ./backend/index.cjs\" \"vite\"",
+  "start:backend": "node ./backend/index.cjs",
+  "start:frontend": "vite"
+},
+
+
   "dependencies": {
     "create-vite": "^5.2.0"
   }
