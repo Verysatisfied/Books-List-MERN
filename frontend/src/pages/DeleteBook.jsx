@@ -13,9 +13,7 @@ const DeleteBook = () => {
 
   const handleDeleteBook = () => {
     setLoading(true);
-    const url =
-      `http://localhost:5555/books/${id}` ||
-      `https://book-mern-project.cyclic.app/books/${id}`;
+    const url = `https://book-mern-project.cyclic.app/books/${id}`;
 
     axios
       .delete(url)
