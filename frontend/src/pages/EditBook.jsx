@@ -17,8 +17,12 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
+    const url =
+      `http://localhost:5555/books/${id}` ||
+      `https://book-mern-project.cyclic.app/books/${id}`;
+
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(url)
       .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear);
