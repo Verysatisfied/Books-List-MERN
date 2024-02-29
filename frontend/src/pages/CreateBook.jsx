@@ -21,8 +21,7 @@ const CreateBook = () => {
     };
     setLoading(true);
     axios
-      .post(  "http://localhost:5555/books" ||
-          "https://book-mern-project.cyclic.app/books",
+      .post(  "https://book-mern-project.cyclic.app/books",
         data )
       .then(() => {
         setLoading(false);
