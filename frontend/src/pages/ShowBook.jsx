@@ -10,9 +10,7 @@ const ShowBook = () => {
   const { id } = useParams();
   useEffect(() => {
     setLoading(true);
-    const url =
-      `http://localhost:5555/books/${id}` ||
-      `https://book-mern-project.cyclic.app/books/${id}`;
+    const url =`https://book-mern-project.cyclic.app/books/${id}`;
 
     axios
       .get(url)
