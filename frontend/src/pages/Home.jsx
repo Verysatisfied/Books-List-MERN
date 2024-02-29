@@ -19,8 +19,7 @@ const Home = () => {
     setLoading(true);
     axios
       .get(
-        "http://localhost:5555/books" ||
-          "https://book-mern-project.cyclic.app/books"
+        "https://book-mern-project.cyclic.app/books"
       )
       .then((response) => {
         setBooks(response.data.data);
